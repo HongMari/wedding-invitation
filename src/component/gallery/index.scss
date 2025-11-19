@@ -1,3 +1,10 @@
+img {
+  pointer-events: none;   // 이미지 클릭 자체를 막기
+  -webkit-touch-callout: none; // iOS 기본 저장 팝업 막기
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 $gallery-width: 21rem;
 $gallery-height: 30rem;
 $transition-duration: 0.3s;
