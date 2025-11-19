@@ -9,7 +9,7 @@ const CAROUSEL_ITEMS = GALLERY_IMAGES.map((item, idx) => (
   <div className="carousel-item" key={idx}>
     <img
       key={idx}
-      src={image}
+      src={item}
       alt={`${idx}`}
       draggable={false}
       onContextMenu={(e) => e.preventDefault()}
