@@ -2,13 +2,12 @@
   .wedding-date {
     margin-top: 2rem;
     font-size: 1.5rem;
-    color: var(--alt-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     .divider {
-      background-color: var(--dark-color);
+      background-color: var(--alt-color);
       width: 1px;
       height: 0.7rem;
     }
