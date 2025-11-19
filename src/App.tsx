@@ -1,3 +1,13 @@
+// 오른쪽 클릭(컨텍스트 메뉴) 방지
+document.addEventListener("contextmenu", (e) => e.preventDefault())
+
+// 이미지 길게 누르면 저장되는 기능 방지 (모바일)
+document.addEventListener("touchstart", (e) => {
+  if ((e.target as HTMLElement).tagName === "IMG") {
+    e.preventDefault()
+  }
+}, { passive: false })
+
 import { Cover } from "./component/cover"
 import { Location } from "./component/location"
 import "./App.scss"
