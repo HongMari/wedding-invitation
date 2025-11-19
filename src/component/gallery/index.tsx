@@ -7,27 +7,7 @@ import { GALLERY_IMAGES } from "../../images"
 
 const CAROUSEL_ITEMS = GALLERY_IMAGES.map((item, idx) => (
   <div className="carousel-item" key={idx}>
-    <img
-      key={idx}
-      src={item}
-      alt={`${idx}`}
-      draggable={false}
-      onContextMenu={(e) => e.preventDefault()}
-      style={{
-        pointerEvents: "none",
-        userSelect: "none",
-        WebkitUserSelect: "none",
-        WebkitTouchCallout: "none",
-      }}
-      onClick={() => {
-        if (statusRef.current === "stationary") {
-          if (idx !== slideRef.current) {
-            move(slideRef.current, idx)
-          }
-          closeModal()
-        }
-      }}
-    />
+    <img src={item} draggable={false} alt={`${idx}`} />
   </div>
 ))
 
