@@ -5,9 +5,14 @@ import { Button } from "../button"
 import { useModal } from "../modal"
 import { GALLERY_IMAGES } from "../../images"
 
-const CAROUSEL_ITEMS = GALLERY_IMAGES.map((item, idx) => (
+const CAROUSEL_ITEMS = GALLERY_IMAGES.map((src, idx) => (
   <div className="carousel-item" key={idx}>
-    <img src={item} draggable={false} alt={`${idx}`} />
+    <img
+      src={src}
+      alt={`${idx}`}
+      draggable={false}
+      onContextMenu={(e) => e.preventDefault()}
+    />
   </div>
 ))
 
@@ -36,9 +41,9 @@ export const Gallery = () => {
 
   useEffect(() => {
     // preload images
-    GALLERY_IMAGES.forEach((image) => {
+    GALLERY_IMAGES.forEach((src) => {
       const img = new Image()
-      img.src = image
+      img.src = src
     })
   }, [])
 
@@ -80,11 +85,6 @@ export const Gallery = () => {
   const setClickMove = (clickMove: ClickMove) => {
     clickMoveRef.current = clickMove
   }
-
-  // For debugging
-  // useEffect(() => {
-  //   console.log(status)
-  // }, [status])
 
   const click = (
     status: Status,
@@ -366,12 +366,13 @@ export const Gallery = () => {
             content: (
               <>
                 <div className="photo-list">
-                  {GALLERY_IMAGES.map((image, idx) => (
+                  {GALLERY_IMAGES.map((src, idx) => (
                     <img
                       key={idx}
-                      src={image}
+                      src={src}
                       alt={`${idx}`}
                       draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
                       onClick={() => {
                         if (statusRef.current === "stationary") {
                           if (idx !== slideRef.current) {
