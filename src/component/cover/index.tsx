@@ -22,15 +22,14 @@ export const Cover = () => {
   return (
     <LazyDiv className="card cover">
       <div className="wedding-date">
-        {WEDDING_DATE.format("YYYY")}
-        <div className="divider" />
-        {WEDDING_DATE.format("MM")}
-        <div className="divider" />
-        {WEDDING_DATE.format("DD")}
+        저희 결혼합니다
       </div>
-      <div className="wedding-day-of-week">
+
+      {/* 요일을 아예 숨기려면 제거 */}
+      {/* <div className="wedding-day-of-week">
         {DAY_OF_WEEK[WEDDING_DATE.day()]}
-      </div>
+      </div> */}
+
       <div className="image-wrapper">
         <img src={COVER_IMAGE} alt="sample" />
       </div>
