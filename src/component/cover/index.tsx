@@ -22,7 +22,7 @@ export const Cover = () => {
   return (
     <LazyDiv className="card cover">
       <div className="wedding-date">
-        저희 결혼합니다
+        저희, 결혼합니다
       </div>
 
       {/* 요일을 아예 숨기려면 제거 */}
