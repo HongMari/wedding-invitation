@@ -156,7 +156,7 @@ const NaverMap = () => {
                   goaly: WEDDING_HALL_POSITION[1].toString(),
                   goalName: LOCATION,
                 })
-                window.open(`tmap://route?${params.toString()}`, "_self")
+                window.location.href = `tmap://route?${params.toString()}`
                 break
               }
               default: {
