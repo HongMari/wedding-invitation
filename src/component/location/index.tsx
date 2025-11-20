@@ -27,7 +27,7 @@ export const Location = () => {
             <br />
             <b>이룸웨딩컨벤션</b> 검색
             <br />
-            → 지하 추차장 이용(하객 2시간 무료)
+            → 지하 주차장 이용(하객 2시간 무료)
           </div>
         </div>
         <div className="location-info">
