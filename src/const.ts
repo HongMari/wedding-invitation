@@ -72,7 +72,7 @@ export const GROOM_FIRSTNAME = "경준"
 export const GROOM_TITLE = "차남"
 export const GROOM_FATHER = "김영실"
 export const GROOM_MOTHER = "양명임"
-export const BRIDE_PARENTS_ACCOUNT = "국민은행 06590204109807";
+export const GROOM_PARENTS_ACCOUNT = "국민은행 06590204109807";
 export const GROOM_INFO = [
   {
     relation: "신랑",
