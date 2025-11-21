@@ -93,6 +93,6 @@ export const GROOM_INFO = [
       {
     relation: "신랑 측 부모님",
     name: `${GROOM_FATHER} · ${GROOM_MOTHER}`,
-   account: BRIDE_PARENTS_ACCOUNT, 
+   account: GROOM_PARENTS_ACCOUNT, 
   },
 ]
