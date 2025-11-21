@@ -42,7 +42,7 @@ export const BRIDE_FIRSTNAME = "마리"
 export const BRIDE_TITLE = "장녀"
 export const BRIDE_FATHER = "홍광준"
 export const BRIDE_MOTHER = "박영인"
-export const BRIDE_PARENTS_ACCOUNT = "국민은행 48552588110091 (신부 측 부모님)";
+export const BRIDE_PARENTS_ACCOUNT = "국민은행 48552588110091";
 export const BRIDE_INFO = [
   {
     relation: "신부",
@@ -72,6 +72,7 @@ export const GROOM_FIRSTNAME = "경준"
 export const GROOM_TITLE = "차남"
 export const GROOM_FATHER = "김영실"
 export const GROOM_MOTHER = "양명임"
+export const BRIDE_PARENTS_ACCOUNT = "국민은행 06590204109807";
 export const GROOM_INFO = [
   {
     relation: "신랑",
@@ -82,13 +83,16 @@ export const GROOM_INFO = [
   {
     relation: "신랑 아버지",
     name: GROOM_FATHER,
-    phone: "010-0000-0000",
-    account: "신한은행 000000000000",
+    phone: "010-3738-7342",
   },
   {
     relation: "신랑 어머니",
     name: GROOM_MOTHER,
-    phone: "010-0000-0000",
-    account: "국민은행 000000000000",
+    phone: "010-4583-7342",
+  },
+      {
+    relation: "신랑 측 부모님",
+    name: `${GROOM_FATHER} · ${GROOM_MOTHER}`,
+   account: BRIDE_PARENTS_ACCOUNT, 
   },
 ]
