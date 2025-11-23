@@ -12,9 +12,13 @@ export const Information1 = () => {
       <div className="info-card">
         <div className="label">식사 안내</div>
         <div className="content">
-          뷔페 형식으로 준비되어 있으니 자유로이 이용 부탁드립니다.
+          뷔페 형식으로 준비되어 있으니
           <br />
-          식사 시간은 예식 30분 전인 오후 12시부터 2시까지 이용 가능합니다. 
+          자유로이 이용 부탁드립니다.
+          <br />
+          식사 시간은 예식 30분 전인
+          <br />
+          오후 12시부터 2시까지 이용 가능합니다.
         </div>
       </div>
     </>
